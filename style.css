@@ -1,0 +1,107 @@
+.calculator {
+  width: 320px;
+  margin: 40px auto;
+  padding: 24px 20px 20px 20px;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.calculator-display {
+  background: #222;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 8px;
+  padding: 16px 12px;
+  text-align: right;
+  margin-bottom: 8px;
+  min-height: 40px;
+  letter-spacing: 1px;
+  word-break: break-all;
+}
+
+.calculator-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+}
+
+.calculator-button {
+  flex: 1 0 21%; /* 4 buttons per row with gap */
+  min-width: 60px;
+  min-height: 48px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: #e0e0e0;
+  color: #222;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-sizing: border-box;
+}
+
+.calculator-button.operator {
+  background: #ffb74d;
+  color: #fff;
+}
+
+.calculator-button.equal {
+  background: #4caf50;
+  color: #fff;
+}
+
+.calculator-button:active {
+  background: #bdbdbd;
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.calculator-utils {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin-top: -8px;
+}
+
+.calculator-utils .calculator-button {
+  flex: 1 0 0;
+  min-width: 0;
+  min-height: 48px;
+  font-size: 1.2rem;
+}
+
+.calculator-button.clear {
+  background: #f44336;
+  color: #fff;
+}
+.calculator-button.clear:active {
+  background: #e57373;
+}
+
+.calculator-button.delete {
+  background: #1976d2;
+  color: #fff;
+}
+.calculator-button.delete:active {
+  background: #64b5f6;
+}
+
+/* Make History button wider */
+.calculator-button.history {
+  flex: 2 0 0;
+  background: #757575;
+  color: #fff;
+}
+.calculator-button.history:active {
+  background: #bdbdbd;
+}
